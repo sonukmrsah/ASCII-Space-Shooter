@@ -55,13 +55,13 @@ int Enemy::movement() {
         shoot();
 
     }
-
+    return 0;
 }
 
 //Player shoot function
 void Enemy::shoot() {
 
-    Item bullet = Item(currWindow, yPos, xPos + 1, '~', "bullet");
+    Item bullet = Item(currWindow, yPos, xPos + 1, '*', "bullet");
 
         //Bullet animation AND position update
         for(int i = bullet.xPos; i > 0 && xPos != (maxX - 2); i--) {

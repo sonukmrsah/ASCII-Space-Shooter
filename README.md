@@ -11,8 +11,7 @@ Have all `*.cpp` and `*.h` files from folder Space_Shooter, cd to the directory,
 ```bash
 cd ASCII-Space-Shooter
 
-g++ -std=c++11 -lncurses main.cpp Game.cpp Entity.h Item.cpp Player.cpp Enemy.cpp LeaderboardList.cpp LeaderboardIO.cpp -o main.out
-```
+g++ -std=c++11 -Iinclude src/*.cpp -lncurses -o bin/main.out
 Afterwards, play via:
 ```bash
 ./main.out
