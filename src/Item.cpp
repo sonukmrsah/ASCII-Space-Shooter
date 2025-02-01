@@ -78,4 +78,5 @@ int Item::movement() {
     xPos = rand() % (maxX - 2) + 1;
     yPos = rand() % (maxY - 2) + 1;
     
+    return 0;
 }

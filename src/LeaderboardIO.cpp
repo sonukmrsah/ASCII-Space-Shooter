@@ -32,7 +32,8 @@ LeaderboardList LeaderboardIO::store_score() {
         //Exits program abnormally
         exit (1);
 
-    } //End if
+    } 
+    //End if
 
     //Extracts variables from the leaderboard.txt file and creates a string object and adds it to the LeaderboardList list
     while (getline(inputFile, line)) {
